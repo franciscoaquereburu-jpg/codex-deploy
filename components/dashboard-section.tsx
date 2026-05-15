@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function DashboardSection() {
   return (
     <section className="py-9 md:py-18 px-4 md:px-16 bg-white border-y border-[var(--line)]" id="dashboard">
@@ -6,12 +8,12 @@ export function DashboardSection() {
           <div>
             <h2 className="m-0 text-2xl md:text-4xl font-bold">Espace vendeur et admin</h2>
             <p className="max-w-[560px] mt-2 text-[var(--muted)] leading-relaxed">
-              Suivi des annonces, leads, modération et performances pour agences et administrateurs.
+              Suivi des annonces, leads, moderation et performances pour agences et administrateurs.
             </p>
           </div>
-          <button className="min-h-[42px] px-4 text-[#07111e] bg-gradient-to-br from-[#ffe4a2] via-[var(--gold)] to-[#a77322] rounded-lg font-bold">
+          <Link href="/publier" className="flex items-center justify-center min-h-[42px] px-4 text-[#07111e] bg-gradient-to-br from-[#ffe4a2] via-[var(--gold)] to-[#a77322] rounded-lg font-bold">
             Publier une annonce
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-5">

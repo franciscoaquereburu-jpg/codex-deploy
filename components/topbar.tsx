@@ -34,12 +34,12 @@ export function Topbar() {
       </nav>
 
       <div className="flex gap-2.5">
-        <button className="hidden md:block min-h-[42px] px-3.5 text-white bg-white/10 rounded-lg font-bold hover:bg-white/20 transition-colors">
+        <Link href="/connexion" className="hidden md:flex items-center min-h-[42px] px-3.5 text-white bg-white/10 rounded-lg font-bold hover:bg-white/20 transition-colors">
           Connexion
-        </button>
-        <button className="min-h-[42px] px-4 text-[#07111e] bg-gradient-to-br from-[#ffe4a2] via-[var(--gold)] to-[#a77322] rounded-lg font-bold">
+        </Link>
+        <Link href="/publier" className="flex items-center min-h-[42px] px-4 text-[#07111e] bg-gradient-to-br from-[#ffe4a2] via-[var(--gold)] to-[#a77322] rounded-lg font-bold">
           Publier
-        </button>
+        </Link>
         <button
           className="md:hidden min-h-[42px] px-3 text-white bg-white/10 rounded-lg"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -63,9 +63,9 @@ export function Topbar() {
             <Link href="#dashboard" className="px-3 py-3 rounded-lg hover:bg-[rgba(214,169,76,0.16)] hover:text-white">
               Espace vendeur
             </Link>
-            <button className="mt-2 px-3 py-3 text-white bg-white/10 rounded-lg font-bold text-left">
+            <Link href="/connexion" className="mt-2 px-3 py-3 text-white bg-white/10 rounded-lg font-bold text-left">
               Connexion
-            </button>
+            </Link>
           </nav>
         </div>
       )}

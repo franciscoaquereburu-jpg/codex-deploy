@@ -4,6 +4,7 @@ import { PropertyCard } from "@/components/property-card"
 import { MapSection } from "@/components/map-section"
 import { SeoSection } from "@/components/seo-section"
 import { DashboardSection } from "@/components/dashboard-section"
+import { Footer } from "@/components/footer"
 
 const properties = [
   {
@@ -124,6 +125,7 @@ export default function Home() {
         <SeoSection />
         <DashboardSection />
       </main>
+      <Footer />
     </>
   )
 }
